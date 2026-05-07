@@ -1,0 +1,16 @@
+{
+  "version": "2.6.1",
+  "summary": {
+    "title": "dfd_A2",
+    "owner": "George",
+    "description": "A small private clinic (15 doctors, approximately 3,000 active patients) operates a digital portal where patients view lab results, book appointments, and exchange messages with their doctor. The system processes special-category health data under GDPR Article 9.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "George",
+    "threatTop": 0
+  }
+}
