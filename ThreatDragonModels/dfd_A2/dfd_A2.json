@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 1350,
+              "x": 1370,
               "y": 170
             },
             "size": {
@@ -550,16 +550,16 @@
             ],
             "id": "bfd62b0b-58a9-4da4-afe7-9df18f11406f",
             "source": {
-              "x": 1290,
+              "x": 1330,
               "y": 100
             },
             "target": {
-              "x": 1290,
+              "x": 1330,
               "y": 630
             },
             "vertices": [
               {
-                "x": 1150,
+                "x": 1190,
                 "y": 370
               }
             ]
@@ -642,6 +642,87 @@
             "target": {
               "cell": "9ccbfff0-2b26-4ccb-ae66-573356bd1754",
               "port": "00d64355-6031-45c0-ae75-7d74f25017ab"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External lab boundary\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "External lab boundary"
+            ],
+            "id": "f21b7471-bd90-4f45-8539-5174027d3701",
+            "source": {
+              "x": 347,
+              "y": 215
+            },
+            "target": {
+              "x": 350,
+              "y": 520
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Push lab results via FHIR\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Push lab results via FHIR"
+            ],
+            "id": "b24a76c9-538e-4ba7-948b-e7041f1e86e7",
+            "source": {
+              "cell": "90905512-9118-43cd-b57c-bf9d41d63657",
+              "port": "26ac5e63-896b-48a4-8cd7-adfde6fcadfd"
+            },
+            "target": {
+              "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
+              "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
             },
             "vertices": []
           },
@@ -891,127 +972,7 @@
           },
           {
             "position": {
-              "x": 90,
-              "y": 210
-            },
-            "size": {
-              "width": 160,
-              "height": 160
-            },
-            "attrs": {
-              "text": {
-                "text": "External lab system"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 13,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "58ad8387-f5e4-470a-8079-9cc467f2cd26"
-                },
-                {
-                  "group": "right",
-                  "id": "0bf17d29-01dd-49ef-bf72-adbe36f1fc3f"
-                },
-                {
-                  "group": "bottom",
-                  "id": "bbb4e83b-8db1-463e-89da-eb633ce94da5"
-                },
-                {
-                  "group": "left",
-                  "id": "105a044e-fed8-483e-ae65-eec1ce4233c6"
-                }
-              ]
-            },
-            "id": "1365cbb9-f1d9-4cb1-a07c-19f037110c6f",
-            "data": {
-              "type": "tm.Process",
-              "name": "External lab system\n",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1350,
+              "x": 1370,
               "y": 400
             },
             "size": {
@@ -1366,6 +1327,123 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 180,
+              "y": 380
+            },
+            "size": {
+              "width": 180,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "External lab system"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "07285270-6415-4b5a-a650-90a4b8acde2f"
+                },
+                {
+                  "group": "right",
+                  "id": "26ac5e63-896b-48a4-8cd7-adfde6fcadfd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "847c77fe-b668-4c75-b47b-d943a7d6511d"
+                },
+                {
+                  "group": "left",
+                  "id": "dbd34022-7178-462f-a8e1-1fba02d6f5ca"
+                }
+              ]
+            },
+            "id": "90905512-9118-43cd-b57c-bf9d41d63657",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "External lab system\n",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
               "threats": []
             }
           }
