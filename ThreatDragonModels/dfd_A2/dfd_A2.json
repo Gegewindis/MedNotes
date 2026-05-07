@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 1330,
-              "y": 285
+              "x": 1350,
+              "y": 170
             },
             "size": {
               "width": 170,
@@ -41,6 +41,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -124,7 +125,6 @@
               ]
             },
             "id": "12cbb5d9-ebed-4c9c-b121-4738f6e45d22",
-            "zIndex": 1,
             "data": {
               "type": "tm.Store",
               "name": "MySQL Database\n",
@@ -143,11 +143,11 @@
           },
           {
             "position": {
-              "x": 780,
-              "y": 250
+              "x": 708.9999999999989,
+              "y": 295
             },
             "size": {
-              "width": 250,
+              "width": 160,
               "height": 160
             },
             "attrs": {
@@ -162,6 +162,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -245,7 +246,6 @@
               ]
             },
             "id": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Backend API\n",
@@ -328,147 +328,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authentication ",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Authentication"
-            ],
-            "id": "ed8fa665-31f3-421b-8fdd-72263c9a0c54",
-            "source": {
-              "cell": "3812549b-eb06-44d1-a52a-c6f5fc0878ca",
-              "port": "0bf17d29-01dd-49ef-bf72-adbe36f1fc3f"
-            },
-            "target": {
-              "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
-              "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Upload/retrieve lab result PDFs ",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Upload/retrieve lab result PDFs"
-            ],
-            "id": "1d113f99-77ef-4544-bfbf-10b2e1a78eee",
-            "source": {
-              "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
-              "port": "0bf17d29-01dd-49ef-bf72-adbe36f1fc3f"
-            },
-            "target": {
-              "cell": "9ccbfff0-2b26-4ccb-ae66-573356bd1754",
-              "port": "690e46a4-291f-44d4-a0b2-d62ec64e98df"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Push lab results via FHIR'",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Push lab results via FHIR"
-            ],
-            "id": "0e49fbbd-3973-435f-9621-9a233b29c01c",
-            "source": {
-              "cell": "1365cbb9-f1d9-4cb1-a07c-19f037110c6f",
-              "port": "0bf17d29-01dd-49ef-bf72-adbe36f1fc3f"
-            },
-            "target": {
-              "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
-              "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Send appointment/reset emails\n\n",
               "description": "",
               "outOfScope": false,
@@ -493,6 +352,87 @@
             "target": {
               "cell": "67e990f8-7148-499c-a52c-0b856643c6ca",
               "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet boundary\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Internet boundary"
+            ],
+            "id": "7d6cd53f-73ea-452f-a2e6-4f0cf59dd651",
+            "source": {
+              "x": 420,
+              "y": 660
+            },
+            "target": {
+              "x": 1160,
+              "y": 660
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " Authentication\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              " Authentication"
+            ],
+            "id": "6f3b6b0c-407b-4800-b428-b09d9e9a57ab",
+            "source": {
+              "cell": "3812549b-eb06-44d1-a52a-c6f5fc0878ca",
+              "port": "58ad8387-f5e4-470a-8079-9cc467f2cd26"
+            },
+            "target": {
+              "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
+              "port": "bbb4e83b-8db1-463e-89da-eb633ce94da5"
             },
             "vertices": []
           },
@@ -532,14 +472,14 @@
             "labels": [
               "View patient records"
             ],
-            "id": "65aa89f2-a1b2-4d83-b280-62086f22a297",
+            "id": "185caccb-5ac0-4ce0-8af4-1779e7e57771",
             "source": {
               "cell": "728532f9-9081-4e05-aedb-deb27e3a9cbf",
               "port": "0bf17d29-01dd-49ef-bf72-adbe36f1fc3f"
             },
             "target": {
               "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
-              "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
+              "port": "bbb4e83b-8db1-463e-89da-eb633ce94da5"
             },
             "vertices": []
           },
@@ -563,7 +503,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User management\n",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -577,23 +517,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "User management"
+              "User management\n"
             ],
-            "id": "283bdc96-a244-40a6-84d7-5c83c38c2c15",
+            "id": "f8e9a4b8-c584-4e3d-8527-1e8fad37c1c0",
             "source": {
               "cell": "bfdd8bca-2147-4d69-bd16-adc6ad358f0b",
-              "port": "0bf17d29-01dd-49ef-bf72-adbe36f1fc3f"
+              "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
             },
             "target": {
               "cell": "cc3f7831-12dc-40ef-8fd8-7316f7729b2a",
-              "port": "105a044e-fed8-483e-ae65-eec1ce4233c6"
+              "port": "bbb4e83b-8db1-463e-89da-eb633ce94da5"
             },
             "vertices": []
           },
           {
             "position": {
-              "x": 338.99999999999886,
-              "y": 160
+              "x": 708.9999999999989,
+              "y": 780
             },
             "size": {
               "width": 160,
@@ -611,6 +551,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -694,7 +635,6 @@
               ]
             },
             "id": "3812549b-eb06-44d1-a52a-c6f5fc0878ca",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Patient browser/app\n",
@@ -712,8 +652,8 @@
           },
           {
             "position": {
-              "x": 1330,
-              "y": 130
+              "x": 703.9999999999989,
+              "y": -100
             },
             "size": {
               "width": 170,
@@ -734,6 +674,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -817,7 +758,6 @@
               ]
             },
             "id": "9ccbfff0-2b26-4ccb-ae66-573356bd1754",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "AWS S3\n",
@@ -836,8 +776,8 @@
           },
           {
             "position": {
-              "x": 338.99999999999886,
-              "y": 350.00000000000034
+              "x": 90,
+              "y": 210
             },
             "size": {
               "width": 160,
@@ -855,6 +795,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -938,7 +879,6 @@
               ]
             },
             "id": "1365cbb9-f1d9-4cb1-a07c-19f037110c6f",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "External lab system\n",
@@ -956,8 +896,8 @@
           },
           {
             "position": {
-              "x": 1330,
-              "y": 430.00000000000034
+              "x": 1350,
+              "y": 400
             },
             "size": {
               "width": 170,
@@ -975,6 +915,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1058,7 +999,6 @@
               ]
             },
             "id": "67e990f8-7148-499c-a52c-0b856643c6ca",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Clinic SMTP\n",
@@ -1076,8 +1016,8 @@
           },
           {
             "position": {
-              "x": 338.99999999999886,
-              "y": -20
+              "x": 470,
+              "y": 630
             },
             "size": {
               "width": 160,
@@ -1095,6 +1035,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1178,7 +1119,6 @@
               ]
             },
             "id": "728532f9-9081-4e05-aedb-deb27e3a9cbf",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Doctor browser\n",
@@ -1196,8 +1136,8 @@
           },
           {
             "position": {
-              "x": 338.99999999999886,
-              "y": 530.0000000000003
+              "x": 940,
+              "y": 630
             },
             "size": {
               "width": 160,
@@ -1215,6 +1155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1298,7 +1239,6 @@
               ]
             },
             "id": "bfdd8bca-2147-4d69-bd16-adc6ad358f0b",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Admin browser\n",
