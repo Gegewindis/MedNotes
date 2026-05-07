@@ -8,8 +8,19 @@
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
-    "diagramTop": 0,
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "dfd_A2",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.6.1",
+        "cells": [],
+        "description": "This is a dataflow diagram where I model the MedNotes system."
+      }
+    ],
+    "diagramTop": 1,
     "reviewer": "George",
     "threatTop": 0
   }
