@@ -363,7 +363,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Internet boundary\n",
+              "name": "T1: Internet boundary\n",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -371,7 +371,7 @@
               "containedElements": []
             },
             "labels": [
-              "Internet boundary"
+              "T1: Internet boundary"
             ],
             "id": "7d6cd53f-73ea-452f-a2e6-4f0cf59dd651",
             "source": {
@@ -538,7 +538,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Internal network\n",
+              "name": "T4: Internal network\n",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -546,7 +546,7 @@
               "containedElements": []
             },
             "labels": [
-              "Internal network"
+              "T4: Internal network"
             ],
             "id": "bfd62b0b-58a9-4da4-afe7-9df18f11406f",
             "source": {
@@ -572,7 +572,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Cloud boundary\n",
+              "name": "T3: Cloud boundary\n",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -580,7 +580,7 @@
               "containedElements": []
             },
             "labels": [
-              "Cloud boundary"
+              "T3: Cloud boundary"
             ],
             "id": "91a64d03-586e-41b7-bac4-1bf475835b5f",
             "source": {
@@ -653,7 +653,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "External lab boundary\n",
+              "name": "T2: External lab boundary\n",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -661,7 +661,7 @@
               "containedElements": []
             },
             "labels": [
-              "External lab boundary"
+              "T2: External lab boundary"
             ],
             "id": "f21b7471-bd90-4f45-8539-5174027d3701",
             "source": {
@@ -1351,6 +1351,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1434,7 +1435,6 @@
               ]
             },
             "id": "90905512-9118-43cd-b57c-bf9d41d63657",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "External lab system\n",
