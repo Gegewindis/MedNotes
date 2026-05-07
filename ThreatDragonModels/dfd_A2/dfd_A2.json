@@ -531,6 +531,40 @@
             "vertices": []
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internal network\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Internal network"
+            ],
+            "id": "bfd62b0b-58a9-4da4-afe7-9df18f11406f",
+            "source": {
+              "x": 1290,
+              "y": 100
+            },
+            "target": {
+              "x": 1290,
+              "y": 630
+            },
+            "vertices": [
+              {
+                "x": 1150,
+                "y": 370
+              }
+            ]
+          },
+          {
             "position": {
               "x": 708.9999999999989,
               "y": 780
