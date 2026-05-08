@@ -281,7 +281,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "All CRUD operations ",
+              "name": "F2: All CRUD operations \n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -295,7 +295,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "All CRUD operations"
+              "F2: All CRUD operations "
             ],
             "id": "ac489bf3-964f-44bf-8059-9ff3041625e2",
             "source": {
@@ -328,7 +328,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Send appointment/reset emails\n\n",
+              "name": "F5: Send appointment/reset emails\n\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -342,7 +342,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Send appointment/reset emails\n"
+              "F5: Send appointment/reset emails\n"
             ],
             "id": "037b7553-4b32-4f75-8308-362537b77233",
             "source": {
@@ -409,7 +409,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": " Authentication\n",
+              "name": "F1: Authentication\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -423,7 +423,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              " Authentication"
+              "F1: Authentication"
             ],
             "id": "6f3b6b0c-407b-4800-b428-b09d9e9a57ab",
             "source": {
@@ -456,7 +456,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "View patient records\n",
+              "name": "F6: View patient records\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -470,7 +470,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "View patient records"
+              "F6: View patient records"
             ],
             "id": "185caccb-5ac0-4ce0-8af4-1779e7e57771",
             "source": {
@@ -503,7 +503,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "F7: Data Flow\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -517,7 +517,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "User management\n"
+              "F7: Data Flow"
             ],
             "id": "f8e9a4b8-c584-4e3d-8527-1e8fad37c1c0",
             "source": {
@@ -618,7 +618,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Upload/retrieve lab result PDFs",
+              "name": "F3: Upload/retrieve lab result PDFs\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -632,7 +632,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Upload/retrieve lab result PDFs\n"
+              "F3: Upload/retrieve lab result PDFs"
             ],
             "id": "172dff8c-5e0d-488c-b7a1-b02143814c35",
             "source": {
@@ -699,7 +699,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Push lab results via FHIR\n",
+              "name": "F4: Push lab results via FHIR\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -713,7 +713,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Push lab results via FHIR"
+              "F4: Push lab results via FHIR"
             ],
             "id": "b24a76c9-538e-4ba7-948b-e7041f1e86e7",
             "source": {
